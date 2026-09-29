@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BSIS Research Questionnaire</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Self-Confidence and Academic Performance Among BSIS Students</h1>
+
+    <p class="subtitle">Questionnaire</p>
+
+    <!-- RESPONDENT PROFILE -->
+
+    <section>
+        <h2>Respondent Profile</h2>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label>Gender:</label>
+
+        <div class="option-group">
+            <label>
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+        </div>
+
+        <label>Year Level:</label>
+
+        <div class="option-group">
+            <label>
+                <input type="radio" name="year" value="1st Year">
+                1st Year
+            </label>
+
+            <label>
+                <input type="radio" name="year" value="2nd Year">
+                2nd Year
+            </label>
+
+            <label>
+                <input type="radio" name="year" value="3rd Year">
+                3rd Year
+            </label>
+        </div>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section">
+
+    </section>
+
+
+    <!-- SELF CONFIDENCE -->
+
+    <section>
+
+        <h2>SELF CONFIDENCE</h2>
+
+        <p>
+            Please indicate how confident you are about each statement
+            by selecting one answer.
+        </p>
+
+        <p class="scale">
+            1 - Not at all Confident<br>
+            2 - Moderately not Confident<br>
+            3 - Slightly not Confident<br>
+            4 - Unsure<br>
+            5 - Slightly Confident<br>
+            6 - Moderately Confident<br>
+            7 - Completely Confident
+        </p>
+
+        <div id="confidenceQuestions"></div>
+
+    </section>
+
+
+    <!-- ACADEMIC PERFORMANCE -->
+
+    <section>
+
+        <h2>ACADEMIC PERFORMANCE</h2>
+
+        <p class="scale">
+            5 = Strongly Agree<br>
+            4 = Agree<br>
+            3 = Neutral<br>
+            2 = Disagree<br>
+            1 = Strongly Disagree
+        </p>
+
+        <div id="performanceQuestions"></div>
+
+    </section>
+
+
+    <button onclick="submitQuestionnaire()">
+        Submit Questionnaire
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
